@@ -1,0 +1,94 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: black;
+}
+
+/*text designs*/
+h1{
+    color: white;
+    position: flex;
+    text-align: center;
+    margin-right: 400px;
+    letter-spacing: 10px;
+}
+
+
+p{
+    text-align: center;
+    color: white;
+    margin-top: 65px;
+    position: block;
+    margin-left: 10px;
+}
+
+.give{
+    color: antiquewhite;
+    margin-top: 70px;
+}
+
+.para{
+    margin-top: 70px;
+}
+
+/*design for the clock*/
+.clock {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: beige;
+    margin-top: 40px;
+    background-color: black;
+    border: 15px solid rgb(196, 117, 117);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    width: 30%;
+    border: 10px solid white;
+    border-radius: 15px;
+    margin-left: 700px;
+    transition: width 1s;
+    transition-timing-function: ease-in-out;
+}
+.clock:hover{
+    width: 35%;
+}
+
+/*image design*/
+img{
+    display: flex;
+    float: left;
+    width: 40%;
+    height: 20%;
+    transition: width 1s;
+    transition-timing-function: ease-in-out;
+}
+img:hover{
+    width: 565px;
+}
+
+/*addtional image design*/
+#days{
+    padding: 10px;
+    color: whitesmoke;
+}
+
+#hours{
+    border-radius: 15px;
+    padding: 10px;
+    color: whitesmoke;
+}
+#minutes{
+    border-radius: 15px;
+    padding: 10px;
+    color: whitesmoke;
+}
+#seconds{
+    border-radius: 15px;
+    padding: 10px;
+    color: whitesmoke;
+}
+span{
+    color: white;
+}
+
