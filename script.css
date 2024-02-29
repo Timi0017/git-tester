@@ -92,11 +92,18 @@ span{
     color: white;
 }
  @media (min-width: 600px) {
-     .clock{
-     flex-direction:column;
+    .clock {
+        grid-template-columns: repeat(2, 1fr); /* Adjusted grid columns for larger screens */
+        width: 60%; /* Adjusted width for larger screens */
     }
-     img{
-         width:auto;
+
+    img {
+        width: 50%; /* Adjusted image width for larger screens */
+        height: auto;
+        float: right; /* Aligned image to the right on larger screens */
+        margin-left: 0;
+    }
+}
          height:auto;
          float:none;
          margin-left: 700px;
