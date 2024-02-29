@@ -91,4 +91,8 @@ img:hover{
 span{
     color: white;
 }
+ @media (min-width: 600px) {
+    main {
+      flex-wrap: nowrap;
+    }
 
