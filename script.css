@@ -1,43 +1,39 @@
-*{
+* {
     font-family: 'Courier New', Courier, monospace;
 }
-body{
+
+body {
     background-color: black;
+    margin: 0; /* Reset default margin */
 }
 
-/*text designs*/
-h1{
+/* Text designs */
+h1 {
     color: white;
-    position: flex;
     text-align: center;
-    margin-right: 400px;
     letter-spacing: 10px;
+    margin: 20px 0;
 }
 
-
-p{
+p {
     text-align: center;
     color: white;
-    margin-top: 65px;
-    position: block;
-    margin-left: 10px;
+    margin: 10px;
 }
 
-.give{
+.give {
     color: antiquewhite;
-    margin-top: 70px;
+    margin-top: 10px;
 }
 
-.para{
-    margin-top: 70px;
+.para {
+    margin-top: 10px;
 }
 
-/*design for the clock*/
+/* Design for the clock */
 .clock {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    background-color: beige;
-    margin-top: 40px;
     background-color: black;
     border: 15px solid rgb(196, 117, 117);
     padding: 20px;
@@ -46,66 +42,52 @@ p{
     width: 600px;
     border: 10px solid white;
     border-radius: 15px;
-    margin-left: 700px;
+    margin: 40px auto; /* Center the clock */
     transition: width 1s;
     transition-timing-function: ease-in-out;
 }
-.clock:hover{
-    width: 35%;
-}
 
-/*image design*/
-img{
-    display: flex;
-    float: left;
-    width: 40%;
-    height: 20%;
+/* Image design */
+img {
+    display: block;
+    margin: 0 auto; /* Center the image */
+    width: 80%;
+    max-width: 565px;
+    height: auto;
     transition: width 1s;
     transition-timing-function: ease-in-out;
 }
-img:hover{
-    width: 565px;
+
+/* Additional image design */
+#days,
+#hours,
+#minutes,
+#seconds {
+    border-radius: 15px;
+    padding: 10px;
+    color: whitesmoke;
 }
 
-/*addtional image design*/
-#days{
-    padding: 10px;
-    color: whitesmoke;
-}
-
-#hours{
-    border-radius: 15px;
-    padding: 10px;
-    color: whitesmoke;
-}
-#minutes{
-    border-radius: 15px;
-    padding: 10px;
-    color: whitesmoke;
-}
-#seconds{
-    border-radius: 15px;
-    padding: 10px;
-    color: whitesmoke;
-}
-span{
+span {
     color: white;
 }
- @media (min-width: 600px) {
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
     .clock {
-        grid-template-columns: repeat(2, 1fr); /* Adjusted grid columns for larger screens */
-        width: 60%; /* Adjusted width for larger screens */
+        width: 80%; /* Adjust the width for smaller screens */
     }
 
     img {
-        width: 50%; /* Adjusted image width for larger screens */
-        height: auto;
-        float: right; /* Aligned image to the right on larger screens */
-        margin-left: 0;
+        width: 100%; /* Make the image fill the width of the screen */
+        max-width: none; /* Remove the max-width restriction */
+    }
+
+    #days,
+    #hours,
+    #minutes,
+    #seconds {
+        display: block;
+        margin: 10px auto; /* Center the timer */
     }
 }
-         height:auto;
-         float:none;
-         margin-left: 700px;
-     }
-
