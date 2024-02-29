@@ -93,8 +93,10 @@ span{
 }
  @media (min-width: 600px) {
      .clock{
-      flex-wrap: nowrap;
-         display:flex;
-         margin-right: 500px;
+     flex-direction:column;
     }
+     img{
+         width:auto;
+         height:auto;
+         float:none;
 
